@@ -1,0 +1,10 @@
+&INPUTPP
+prefix='calc',
+outdir='.',
+plot_num=11,
+filplot = 'metal.pot'
+/
+&PLOT
+iflag=3,
+output_format=6,
+fileout = 'metal.cube'

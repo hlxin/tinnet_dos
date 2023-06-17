@@ -1,0 +1,9 @@
+&PROJWFC
+  prefix='calc',
+  outdir='.',
+  Emin = -30,
+  Emax = 30,
+  DeltaE = 0.005d0,
+  ngauss = 0,
+  degauss = 0.0146997295163d0,
+/
