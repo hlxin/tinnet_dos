@@ -39,7 +39,7 @@ class Tight_binding:
         #zeta = torch.take_along_dim(zeta, order, 1)
         #zeta = torch.stack([zeta[i][order[i]] for i in range(len(order))])
         
-        crys_fea = torch.nn.functional.softplus(crys_fea)
+        crys_fea = torch.nn.functional.softplus(crys_fea[:,0,:])
         zeta = torch.nn.functional.softplus(zeta)
         
         m2 = torch.sum(tabulated_v2ds / zeta[:,:,0]
